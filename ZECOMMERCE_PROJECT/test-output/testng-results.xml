@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35992" started-at="2019-11-07T17:31:28 GMT" finished-at="2019-11-07T17:32:04 GMT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35992" started-at="2019-11-07T17:31:28 GMT" finished-at="2019-11-07T17:32:04 GMT">
+      <class name="Test_class.CartTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Test_class.CartTest@17d677df]" name="setup" is-config="true" duration-ms="8406" started-at="2019-11-07T17:31:28 GMT" finished-at="2019-11-07T17:31:36 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="add_items_to_cart()[pri:0, instance:Test_class.CartTest@17d677df]" name="add_items_to_cart" duration-ms="26863" started-at="2019-11-07T17:31:36 GMT" finished-at="2019-11-07T17:32:03 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_items_to_cart -->
+        <test-method status="PASS" signature="tear_down()[pri:0, instance:Test_class.CartTest@17d677df]" name="tear_down" is-config="true" duration-ms="671" started-at="2019-11-07T17:32:03 GMT" finished-at="2019-11-07T17:32:04 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- Test_class.CartTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
