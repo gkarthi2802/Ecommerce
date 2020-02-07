@@ -16,14 +16,14 @@ public static Properties prop;
 public Base_class() throws IOException {
 
  prop = new Properties();
- FileInputStream fis = new FileInputStream("C:\\Users\\Karthik\\eclipse-workspace\\ZECOMMERCE_PROJECT\\Resources\\config.properties");
+ FileInputStream fis = new FileInputStream("C:\\Users\\Karthik\\git\\Ecommerce\\ZECOMMERCE_PROJECT\\Resources\\config.properties");
  prop.load(fis);
 	
 	
 }
 
 public static void init() {
-System.setProperty("webdriver.chrome.driver", "C:\\Users\\Karthik\\Desktop\\chromedriver_win32\\chromedriver.exe");
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\Karthik\\Desktop\\chromedriver_win323\\chromedriver.exe");
 driver = new ChromeDriver();	
 driver.get("http://automationpractice.com/index.php");
 driver.manage().window().maximize();
