@@ -8,10 +8,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Base_utilities.Base_class;
-import Regression_pack.Create_an_account;
-import Regression_pack.Home_page;
-import Regression_pack.MyAccount;
-import Regression_pack.sign_in_page;
+import Page_objects.Create_an_account;
+import Page_objects.Home_page;
+import Page_objects.MyAccount;
+import Page_objects.sign_in_page;
 
 public class LoginTest extends Base_class {
 

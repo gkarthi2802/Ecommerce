@@ -20,9 +20,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Base_utilities.Base_class;
-import Regression_pack.Create_an_account;
-import Regression_pack.Home_page;
-import Regression_pack.sign_in_page;
+import Page_objects.Create_an_account;
+import Page_objects.Home_page;
+import Page_objects.sign_in_page;
 
 public class Registration extends Base_class {
  
@@ -51,35 +51,9 @@ String welcome_txt = caa.fill_registration();
 Assert.assertEquals(prop.getProperty("welcomeText"), welcome_txt);	
 
 }
-	
-@AfterMethod()
-public void tear_down(ITestResult lis) {
- 
-	if(ITestResult.FAILURE==lis.getStatus())
-	{
-	try 
-	{
-	// Create refernce of TakesScreenshot
-	TakesScreenshot ts=(TakesScreenshot)driver;
-	 
-	// Call method to capture screenshot
-	File source=ts.getScreenshotAs(OutputType.FILE);
-	 
-	// Copy files to specific location here it will save all screenshot in our project home directory and
-	// result.getName() will return name of test case so that screenshot name will be same
-	FileUtils.copyFile(source, new File("C:\\Users\\Karthik\\git\\Ecommerce\\ZECOMMERCE_PROJECT\\Screenshots\\"+lis.getName()+".png"));
-	 
-	System.out.println("Screenshot taken");
-	} 
-	catch(Exception e)
-	{
-		
-	}
-	}
-
-	
-	driver.quit();
-	
+@AfterMethod
+public void tear_down(){
+   	driver.quit();
 }
 
 }

@@ -8,13 +8,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Base_utilities.Base_class;
-import Regression_pack.Address_page;
-import Regression_pack.Home_page;
-import Regression_pack.MyAccount;
-import Regression_pack.Payment_page;
-import Regression_pack.Summary_page;
-import Regression_pack.shipping_page;
-import Regression_pack.sign_in_page;
+import Page_objects.Address_page;
+import Page_objects.Home_page;
+import Page_objects.MyAccount;
+import Page_objects.Payment_page;
+import Page_objects.Summary_page;
+import Page_objects.shipping_page;
+import Page_objects.sign_in_page;
 
 public class CartTest extends Base_class {
 

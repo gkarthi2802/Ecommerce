@@ -1,9 +1,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
   
 <suite name="Suite1" verbose="1" >
+    <listeners>
+        <listener class-name="Annotations.TestFial"/>
+    </listeners>
   <test name="Nopackage" >
     <classes>
-       <class name="Test_class.cartTest" />
+       <class name="Test_class.CartTest" />
        <class name="Test_class.LoginTest" />
        <class name="Test_class.Registration" />
     </classes>
